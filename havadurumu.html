@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hava Durumu Uygulaması</title>
+    <link rel="stylesheet" href="havadurumu.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>🌤️ Hava Durumu</h1>
+
+    <div class="search">
+        <input type="text" id="city" placeholder="Şehir giriniz">
+        <button onclick="getWeather()">Ara</button>
+    </div>
+
+    <div class="weather" id="weather">
+        <h2 id="cityName"></h2>
+        <img id="icon">
+        <p id="temp"></p>
+        <p id="desc"></p>
+        <div class="details">
+            <span id="feels"></span>
+            <span id="humidity"></span>
+            <span id="wind"></span>
+        </div>
+    </div>
+</div>
+
+<script src="havadurumu.js"></script>
+</body>
+</html>
